@@ -1,0 +1,18 @@
+<ul>
+    <li *ngFor="let recipe of recipes">
+        <h2>{{ recipe.name }}</h2>
+        <div>{{ recipe.rating }}</div>
+
+        <ol>
+            <li *ngFor="let instruction of recipe.instructions">
+                {{ instruction }}
+            </li>
+        </ol>
+
+        <ul>
+            <li *ngFor="let ingredient of recipe.ingredients">
+                {{ ingredient }}
+            </li>
+        </ul>
+    </li>
+</ul>
